@@ -10,6 +10,7 @@ type Config struct {
 	DatabaseUsername string `mapstructure:"DB_USER"`
 	DatabasePassword string `mapstructure:"DB_PASSWORD"`
 	JwtSecretKey     string `mapstructure:"JWT_SECRET_KEY"`
+	ProductSvcUrl    string `mapstructure:"PRODUCT_SVC_URL"`
 }
 
 func LoadConfig() (config Config, err error) {

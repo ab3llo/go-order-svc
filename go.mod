@@ -2,6 +2,8 @@ module github.com/ab3llo/go-order-svc
 
 go 1.18
 
+require github.com/google/uuid v1.3.0
+
 require (
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect

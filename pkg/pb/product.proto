@@ -50,6 +50,7 @@ message FindOneResponse {
 message DecreaseStockRequest {
     string id = 1;
     string orderId = 2;
+    int64 quantity = 3;
 }
 
 message DecreaseStockResponse {

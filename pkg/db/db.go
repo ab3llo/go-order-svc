@@ -15,7 +15,7 @@ type DatabaseConnection struct {
 	DB *gorm.DB
 }
 
-func Connect(cfg config.Config) DatabaseConnection {
+func Connect(cfg *config.Config) DatabaseConnection {
 	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=Europe/London",
 		cfg.DatabaseHost,
 		cfg.DatabaseUsername,
